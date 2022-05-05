@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title>Peniel | Jardines de Morelos</title>
+
+  <%- include("partials/head.html")%>
+</head>
+
+<body>
+  <section id="container" class="container-fluid">
+
+    <!-- CABECERA -->
+    <%- include("partials/navigation.html")%>
+      <!-- FIN DE MENU -->
+      <nav id="bcrumb" class=" col-11" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="/">Inicio
+            </a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            <%=title%>
+          </li>
+        </ol>
+      </nav>
+      <section id="central-content" class="container-fluid px-5 pt-4">
+        <!-- CONTENIDO -->
+
+        <section id="content" class=" container col col-9 ">
+          <%- include("partials/medcontent.html")%>
+
+        </section>
+
+        <!-- FIN DE CONTENIDO CENTRAL -->
+
+        <!-- BARRA LATERAL///////////////////////////////// -->
+        <aside id="sidebar" class="container shadow-sm ms-3">
+
+          <%- include("partials/sidebar.html")%>
+
+        </aside>
+
+      </section> <!-- FIN DE BARRA LATERAL -->
+      <!-- FOOTER -->
+      <div class="clearfix"></div>
+      <%- include("partials/footer.html")%>
+        <!-- FIN DE FOOTER -->
+       
+</body>
+
+</html>

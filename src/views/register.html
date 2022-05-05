@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Peniel | Jardines de Morelos</title>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+</head>
+
+<body>
+    <section id="container" class="container-fluid">
+
+        <!-- CABECERA -->
+        <%- include("partials/navigation.html")%>
+        <div id="content" class="container-fluid">
+            <form id="form-register" class="box col">
+                <h3>Registrate</h3>
+                <div class="success-alt"></div>
+                <label for="name">Tu Nombre:</label>
+                <input id="form-name" type="text" name="name" placeholder="Ingresa aqui tu nombre">
+
+                <label for="lastname">Tus Apellidos</label>
+                <input id="form-lastname" type="text" name="lastname" placeholder="Ingresa aqui tus apellidos">
+
+                <label for="email">Tu Correo Electronico:</label>
+                <input id="form-email" type="email" name="email" placeholder="Ingresa aqui tu correo">
+
+                <label for="password">Tu Nueva Contraseña:</label>
+                <input id="form-password" type="password" name="password" placeholder="Ingresa aqui tu contraseña">
+
+                <input type="submit" value="Registrarse">                 
+            </form>
+        </div>
+    </section> <!-- FIN DE BARRA LATERAL -->
+    <!-- FOOTER -->
+    <div class="clearfix"></div>
+ 
+
+    <%- include("partials/footer.html")%>
+        <!-- FIN DE FOOTER -->
+
+       
+</body>
+
+</html>
